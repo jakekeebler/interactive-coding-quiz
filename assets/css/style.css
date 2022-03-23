@@ -1,0 +1,183 @@
+:root {
+    --font-color: white;
+    --bg-color: #2a607c;
+}
+
+header {
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: var(--font-color);
+    
+}
+
+header h1 {
+    display: inline;
+    font-size: 36px;
+}
+
+#link-container {
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    float: right;
+}
+
+#link {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    color: var(--font-color);
+}
+
+a {
+    color: var(--font-color);
+}
+
+main {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+    width: 512px;
+    height: 512px;
+}
+
+#startTime {
+    background-color: var(--bg-color);
+    margin-left: 37%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+#questionsDiv {
+    margin: 20px;
+}
+
+#take-quiz {
+    float: center;
+    text-align: center;
+}
+
+#currentTime {
+    float: right;
+}
+
+#goBack {
+    background-color: var(--bg-color);
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--font-color);
+    top: 30%;
+    left: 55%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#clear {
+    background-color: var(--bg-color);
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--font-color);
+    top: 30%;
+    right: 5%;
+    text-align: center;
+}
+
+button {
+    border-radius: 8px;
+}
+
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+#Submit {
+    background-color: var(--bg-color);
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    background-color: var(--bg-color);
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: var(--font-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+/* Start media queries */
+@media screen and (max-width: 786px) {
+    
+    body {
+        max-width: 786px;
+    }
+
+    main {
+        position: absolute;
+        left: 20%;
+    }
+
+    a {
+        margin-left: 20%;
+    }
+
+    #goBack {
+        position: relative;
+        left: 55%;
+    }
+
+    #clear {
+        position: relative;
+        right: 5%;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+    
+    body {
+        min-width: 640px;
+    }
+
+    main {
+        position: absolute;
+        left: 10%;
+    }
+
+    a {
+        margin-left: 10%;
+    }
+
+     
+}
